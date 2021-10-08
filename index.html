@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <title>Portfólio da Aline | Gama Academy </title>
+</head>
+
+<body>
+
+    <!-- Inicio do Cabeçalho -->
+    <header>
+        <div class="assinatura">
+            <p>Imagine uma logo bonita aqui </p>
+        </div>
+
+        <ul>
+            <li><a href="https://github.com/alinecarvalhoz">Github</a>
+            </li>
+            <li><a href="https://mailto:alinecarvalho.2002@gmail.com">Email</a>
+            </li>
+            <li><a href="https://wa.me/32988427689">Whatsapp</a>
+            </li>
+        </ul>
+
+    </header>
+    <!-- Fim do Cabeçalho  -->
+
+    <!-- Inicio Conteudo Principal -->
+    <main>
+
+        <section class="container">
+            <div class="name">
+                <h1>Aline Carvalho</h1>
+                <h5>Estudante de Engenharia Elétrica</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="seta">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus minima animi libero
+                    impedit ducimus
+                    laudantium adipisci modi, harum beatae? <i class="fas fa-heart"></i>
+                </p>
+            </div>
+
+            <div class="form">
+                <p>
+                    Deixe seu contato!
+                </p>
+                <form action="">
+                    <input type="email" placeholder="seu melhor email :)">
+                    <button type="submit">enviar!</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <!-- Fim do Conteudo Principal -->
+
+<script>
+    function displayAbout(){
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+        var display = document.getElementById('about');
+        display.classList.toggle('active');
+    }
+</script>
+
+
+</body>
+
+</html>
