@@ -125,7 +125,7 @@ header ul li a:hover {
 #seta i{
     font-size: 40px;
     cursor: pointer;
-    animation:blink 0.8s steps(5,start) infinite;
+    animation:blink 0.9s steps(5,start) infinite;
 
 }
 
